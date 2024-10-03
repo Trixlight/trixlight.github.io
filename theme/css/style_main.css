@@ -133,12 +133,16 @@ abbr {
 /*----------------------------------------------------------------------------------------
 	2. General
 ----------------------------------------------------------------------------------------*/
+:root {
+  font-size: 16px;
+}
+
 html {
   height: 100%;
 }
 
 body {
-  font: 16px "Fira Sans", Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   line-height: 1.25;
   height: 100%;
   color: #EEE;

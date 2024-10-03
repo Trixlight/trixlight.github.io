@@ -1,32 +1,16 @@
 @media screen and (max-width: 480px),
 screen and (max-height: 780px) {
 
+  :root {
+    font-size: 14px;
+  }
+
   body {
     background-image: url("/theme/images/video-preview.jpg");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
-
-  body {
-    font-size: 0.9rem;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  code.inline {
-    font-size: 0.8rem;
-  }
-
-  footer {
-    font-size: 0.7rem;
   }
 
   #background-video {
