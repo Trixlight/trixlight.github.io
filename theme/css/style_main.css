@@ -182,10 +182,10 @@ section {
   position: absolute;
   margin: -100px;
   z-index: -1;
-  background: linear-gradient(-45deg, #44443b, #2b1f1f, #121827, #333d3a);
+  background: linear-gradient(-45deg, #575743e0, #3b2828e0, #121827d6, #374742de);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  opacity: 0.98;
+  backdrop-filter: blur(50px);
 }
 
 @keyframes gradient {
@@ -258,6 +258,20 @@ code.inline {
   font-size: 85%;
   font-family: "Fira Mono";
   background: #393c42;
+}
+
+.map a {
+  background-color: #393c42;
+  transition: ease-in-out 150ms;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.map a:hover,
+.map a:active {
+  background-color: #8d94ebe5;
 }
 
 .social {
