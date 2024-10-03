@@ -69,9 +69,7 @@
   transform: translate(-50%, calc(0px - var(--arrow-size))) scale(1);
 }
 
-/* 
-  Arrow slide down effect only on mouseenter (NOT on mouseleave)
-*/
+/* Arrow slide down effect only on mouseenter (NOT on mouseleave) */
 [data-tooltip]:hover:after {
   transition-delay: 0.3s;
   transition-duration: 0.5s;
@@ -95,26 +93,4 @@
 
 [data-tooltip-location="right"]:after {
   left: 50%;
-}
-
-
-/* BOTTOM */
-[data-tooltip-location="bottom"]:before,
-[data-tooltip-location="bottom"]:after {
-  top: calc(100% + var(--arrow-size));
-  bottom: auto;
-}
-
-[data-tooltip-location="bottom"]:before {
-  transform: translate(-50%, var(--arrow-size)) scale(0.5);
-}
-
-[data-tooltip-location="bottom"]:hover:before {
-  transform: translate(-50%, var(--arrow-size)) scale(1);
-}
-
-[data-tooltip-location="bottom"]:after {
-  border-width: 0px var(--arrow-size) var(--arrow-size) var(--arrow-size);
-  border-color: transparent transparent #393c42 transparent;
-  transform-origin: bottom;
 }
