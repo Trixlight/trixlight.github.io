@@ -1,0 +1,18 @@
+@media screen and (max-width: 480px),
+screen and (max-height: 720px) {
+
+  main {
+    align-items: flex-start;
+    padding: 15px;
+    height: auto;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .avatar {
+    width: 128px;
+    margin: 0 0 16px;
+  }
+}
