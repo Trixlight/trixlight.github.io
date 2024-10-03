@@ -271,7 +271,7 @@ code.inline {
   border-radius: 24px;
   margin: 0 3px;
   background-color: #ffffffe5;
-  transition: ease-in-out 300ms;
+  transition: ease-in-out 150ms;
 }
 
 .social a img {
