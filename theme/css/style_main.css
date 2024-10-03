@@ -209,13 +209,13 @@ section {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2rem;
   color: #EEE;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #CCC;
   padding-bottom: 15px;
@@ -255,7 +255,7 @@ code.inline {
   padding: 0.2em;
   margin: -0.2em 0;
   border-radius: 3px;
-  font-size: 85%;
+  font-size: 0.85rem;
   font-family: "Fira Mono";
   background: #393c42;
 }

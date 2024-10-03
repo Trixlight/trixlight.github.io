@@ -9,6 +9,26 @@ screen and (max-height: 780px) {
     background-attachment: fixed;
   }
 
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  code.inline {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
   #background-video {
     display: none;
   }
@@ -31,5 +51,10 @@ screen and (max-height: 780px) {
   .avatar {
     width: 128px;
     margin: 0 0 16px;
+  }
+
+  .social a {
+    padding: 4px 4px 0;
+    margin: 0;
   }
 }
