@@ -23,6 +23,11 @@ screen and (max-height: 780px) {
     padding: 32px 16px;
   }
 
+  .gradient {
+    background: #1a1915de;
+    animation: none;
+  }
+
   .avatar {
     width: 128px;
     margin: 0 0 16px;
