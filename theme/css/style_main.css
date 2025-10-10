@@ -261,11 +261,11 @@ code.inline {
   border-radius: 3px;
   font-size: 0.85rem;
   font-family: "Fira Mono";
-  background: #393c42;
+  background: #69718285;
 }
 
 .map a {
-  background-color: #393c42;
+  background-color: #69718285;
   transition: ease-in-out 150ms;
   border-radius: 16px;
   padding: 8px 16px;
@@ -288,7 +288,7 @@ code.inline {
   padding: 6px 6px 2px;
   border-radius: 24px;
   margin: 0 3px;
-  background-color: #393c42;
+  background-color: #69718285;
   transition: ease-in-out 150ms;
 }
 
