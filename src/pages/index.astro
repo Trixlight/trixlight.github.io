@@ -4,7 +4,7 @@ import "../styles/tooltips.css";
 ---
 
 <!doctype html>
-<html lang="ru" class="min-h-screen">
+<html lang="ru" class="min-h-screen scroll-smooth">
   <head>
     <title>Trixlight's Lair</title>
     <meta charset="utf-8" />
@@ -19,16 +19,25 @@ import "../styles/tooltips.css";
   </head>
 
   <body class="flex items-center justify-center min-h-screen">
+    <div
+      id="loading"
+      class="absolute flex w-screen h-screen z-99 items-center justify-center bg-white transition delay-1000 duration-300 ease-in-out pointer-events-none"
+    >
+      <img src="theme/images/loading.webp" alt="Загрузка..." />
+    </div>
+
     <video
-      class="hidden lg:block"
+      class="hidden lg:block fixed w-screen h-screen top-0 left-0 right-0 bottom-0 -z-1 object-cover"
       autoplay
       muted
       loop
       id="background-video"
       poster="theme/images/video-preview.webp"
+      transition:persist
     >
-      <source src="theme/video.mp4" type="video/mp4" />
+      <source src="theme/background.webm" type="video/webm" />
     </video>
+
     <div class="flex flex-col relative gap-4 p-8">
       <div class="gradient"></div>
       <header class="flex flex-col gap-4 place-items-center text-center">
@@ -66,9 +75,20 @@ import "../styles/tooltips.css";
         </div>
       </header>
 
-      <div class="italic text-zinc-200 text-center">
-        "They told me I could become somebody, <br />so I became a
-        disappointment."
+      <div>
+        <p class="text-zinc-200 font-light text-center">
+          «They told me I could become somebody, <br />so I became a
+          disappointment.»
+        </p>
+        <p class="text-sm text-center">
+          <a
+            class="text-zinc-200 hover:text-sky-300 transition duration-300 ease-in-out"
+            href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg"
+            data-tooltip="Ninomae Ina'nis Ch. hololive-EN           на YouTube"
+            target="_blank"
+            rel="nofollow">Ninomae Ina'nis</a
+          >
+        </p>
       </div>
 
       <div>
@@ -163,7 +183,7 @@ import "../styles/tooltips.css";
           >, Эпизод 12.
         </div>
         <div>
-          Текущий аватар - Vigna из Arknights от
+          Текущий аватар — Vigna из Arknights от
           <a
             class="text-zinc-200 hover:text-sky-300 transition duration-300 ease-in-out"
             href="https://www.pixiv.net/en/artworks/78078147"
@@ -173,7 +193,17 @@ import "../styles/tooltips.css";
           >.
         </div>
         <div>
-          Иконка сайта - Retoree из аниме
+          Анимация загрузки — Seana из игры
+          <a
+            class="text-zinc-200 hover:text-sky-300 transition duration-300 ease-in-out"
+            href="https://store.steampowered.com/app/400910"
+            data-tooltip="Страничка в Steam"
+            target="_blank"
+            rel="nofollow">Rabi-Ribi</a
+          >.
+        </div>
+        <div>
+          Иконка сайта — Retoree из аниме
           <a
             class="text-zinc-200 hover:text-sky-300 transition duration-300 ease-in-out"
             href="https://shikimori.io/animes/27441-show-by-rock"
@@ -184,5 +214,11 @@ import "../styles/tooltips.css";
         </div>
       </footer>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("loading").style.opacity = "0";
+      });
+    </script>
   </body>
 </html>
