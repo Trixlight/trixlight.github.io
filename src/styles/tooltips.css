@@ -3,7 +3,7 @@
   Just copy all [data-tooltip] blocks:
 */
 [data-tooltip] {
-  --arrow-size: 5px;
+  --arrow-size: 7px;
   position: relative;
   z-index: 10;
 }
@@ -17,22 +17,24 @@
   left: 50%;
   bottom: calc(100% + var(--arrow-size));
   pointer-events: none;
-  transition: 0.2s;
+  transition: 150ms;
   will-change: transform;
 }
 
 /* The actual tooltip with a dynamic width */
 [data-tooltip]:before {
   content: attr(data-tooltip);
-  padding: 8px 12px;
+  padding: 8px 16px;
   min-width: 30px;
   max-width: 300px;
   width: max-content;
   width: -moz-max-content;
   border-radius: 8px;
-  font-size: 14px;
-  background-color: #393c42;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  background-color: #111111;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
   white-space: pre-wrap;
@@ -45,7 +47,7 @@
   border-style: solid;
   border-width: var(--arrow-size) var(--arrow-size) 0px var(--arrow-size);
   /* CSS triangle */
-  border-color: #393c42 transparent transparent transparent;
+  border-color: #111111 transparent transparent transparent;
   transition-duration: 0s;
   /* If the mouse leaves the element, 
                               the transition effects for the 
@@ -65,17 +67,16 @@
 
 /* Scales from 0.5 to 1 -> grow effect */
 [data-tooltip]:hover:before {
-  transition-delay: 0.3s;
+  transition-delay: 300ms;
   transform: translate(-50%, calc(0px - var(--arrow-size))) scale(1);
 }
 
 /* Arrow slide down effect only on mouseenter (NOT on mouseleave) */
 [data-tooltip]:hover:after {
-  transition-delay: 0.3s;
-  transition-duration: 0.5s;
+  transition-delay: 400ms;
+  transition-duration: 100ms;
   transform: translateX(-50%) scaleY(1);
 }
-
 
 /* LEFT */
 [data-tooltip-location="left"]:before {
