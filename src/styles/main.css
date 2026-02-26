@@ -54,6 +54,12 @@ body {
 }
 
 @media (width <64rem) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+
   :root {
     font-size: 14px;
   }
@@ -67,8 +73,12 @@ body {
   }
 
   .gradient {
-    animation: none;
     margin: -28px;
+  }
+
+  [data-tooltip]:before,
+  [data-tooltip]:after {
+    display: none !important;
   }
 }
 
