@@ -68,6 +68,11 @@ body {
     transform: none !important;
   }
 
+  [data-tooltip]:before,
+  [data-tooltip]:after {
+    display: none !important;
+  }
+
   :root {
     font-size: 14px;
   }
