@@ -4,7 +4,7 @@ import "../styles/tooltips.css";
 ---
 
 <!doctype html>
-<html lang="ru" class="min-h-screen scroll-smooth">
+<html lang="ru" class="min-h-screen scroll-smooth overflow-x-hidden">
   <head>
     <title>Trixlight's Lair</title>
     <meta charset="utf-8" />
@@ -25,7 +25,9 @@ import "../styles/tooltips.css";
     />
   </head>
 
-  <body class="flex items-center justify-center min-h-screen">
+  <body
+    class="flex items-center justify-center min-h-screen p-2 max-sm:bg-[url(/theme/images/background-image.webp)] bg-local bg-center bg-no-repeat bg-cover"
+  >
     <div
       id="loading"
       class="absolute flex flex-col w-screen h-screen z-99 items-center justify-center bg-white opacity-100 transition delay-1000 duration-300 ease-in-out pointer-events-none"
@@ -34,6 +36,7 @@ import "../styles/tooltips.css";
         src="theme/images/loading.webp"
         alt="Загрузка..."
         fetchpriority="high"
+        loading="eager"
       />
       <span
         class="inline-flex items-center text-zinc-800 font-medium animate-wiggle"
@@ -42,13 +45,12 @@ import "../styles/tooltips.css";
     </div>
 
     <video
-      class="hidden lg:block fixed w-screen h-screen top-0 left-0 right-0 bottom-0 -z-1 object-cover"
+      class="hidden sm:block fixed w-screen h-screen top-0 left-0 right-0 bottom-0 -z-1 object-cover"
       autoplay
       muted
       loop
       id="background-video"
-      poster="theme/images/video-preview.webp"
-      transition:persist
+      poster="theme/images/background-image.webp"
     >
       <source src="theme/background.webm" type="video/webm" />
     </video>
@@ -61,8 +63,9 @@ import "../styles/tooltips.css";
         <figure>
           <img
             class="size-55 rounded-full"
-            src="theme/images/avatar.webp"
+            src="theme/images/avatar-256.webp"
             alt="Аватарка"
+            loading="lazy"
           />
         </figure>
         <div>
@@ -87,6 +90,7 @@ import "../styles/tooltips.css";
               width="18"
               height="18"
               alt="RU"
+              loading="lazy"
             />Россия, Оренбург</a
           >
         </div>
@@ -120,6 +124,7 @@ import "../styles/tooltips.css";
               class="size-14 group-hover:brightness-110 transition duration-150 ease-in-out"
               src="theme/images/steam-64.webp"
               alt="Steam"
+              loading="lazy"
             />
           </a>
           <a
@@ -132,6 +137,7 @@ import "../styles/tooltips.css";
               class="size-14 group-hover:brightness-110 transition duration-150 ease-in-out"
               src="theme/images/itch-io-64.webp"
               alt="Itch.io"
+              loading="lazy"
             />
           </a>
           <a
@@ -144,6 +150,7 @@ import "../styles/tooltips.css";
               class="size-14 group-hover:brightness-110 transition duration-150 ease-in-out"
               src="theme/images/youtube-64.webp"
               alt="YouTube"
+              loading="lazy"
             />
           </a>
           <a
@@ -156,6 +163,7 @@ import "../styles/tooltips.css";
               class="size-14 group-hover:brightness-110 transition duration-150 ease-in-out"
               src="theme/images/coub-64.webp"
               alt="Coub"
+              loading="lazy"
             />
           </a>
           <a
@@ -169,6 +177,7 @@ import "../styles/tooltips.css";
               class="size-14 group-hover:brightness-110 transition duration-150 ease-in-out"
               src="theme/images/shikimori-64.webp"
               alt="Shikimori"
+              loading="lazy"
             />
           </a>
         </nav>

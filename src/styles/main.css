@@ -66,30 +66,23 @@ body {
     animation: none !important;
     transform: none !important;
   }
+}
+
+@media (width <40rem) {
+  :root {
+    font-size: 14px;
+  }
 
   [data-tooltip]:before,
   [data-tooltip]:after {
     display: none !important;
   }
 
-  :root {
-    font-size: 14px;
-  }
-
-  body {
-    background-image: url("/theme/images/video-preview.webp");
-    background-position: 50% 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-}
-
-@media (width <28rem) or (height <40rem) {
   .gradient {
     width: 100vw;
     height: 100vh;
     position: fixed;
     border-radius: 0;
+    backdrop-filter: blur(3px);
   }
 }
