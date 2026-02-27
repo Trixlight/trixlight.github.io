@@ -4,7 +4,10 @@ import "../styles/tooltips.css";
 ---
 
 <!doctype html>
-<html lang="ru" class="min-h-screen scroll-smooth overflow-x-hidden">
+<html
+  lang="ru"
+  class="min-h-screen scroll-smooth overflow-x-hidden overflow-y-hidden"
+>
   <head>
     <title>Trixlight's Lair</title>
     <meta charset="utf-8" />
@@ -30,7 +33,7 @@ import "../styles/tooltips.css";
   >
     <div
       id="loading"
-      class="absolute flex flex-col w-screen h-screen z-99 items-center justify-center bg-white opacity-100 transition delay-1000 duration-300 ease-in-out pointer-events-none"
+      class="fixed flex flex-col w-screen h-screen top-0 left-0 right-0 z-99 items-center justify-center bg-white opacity-100 transition duration-300 ease-in-out pointer-events-none"
     >
       <img
         src="theme/images/loading.webp"
@@ -243,7 +246,12 @@ import "../styles/tooltips.css";
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("loading")!.style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("loading")!.style.opacity = "0";
+          document
+            .getElementsByTagName("html")[0]
+            .classList.remove("overflow-y-hidden");
+        }, 1000);
       });
     </script>
   </body>
