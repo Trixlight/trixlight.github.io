@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @custom-variant hover (&:hover);
+@custom-variant max-phone (@media (width < 32rem) or (height < 48rem));
+@custom-variant phone (@media (width >= 32rem) or (height >= 48rem));
 
 @theme {
   --font-firasans: "Fira Sans", sans-serif;
@@ -68,7 +70,7 @@ body {
   }
 }
 
-@media (width <40rem) {
+@media (width < 32rem) or (height < 48rem) {
   :root {
     font-size: 14px;
   }

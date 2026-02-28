@@ -43,7 +43,7 @@ import "../styles/tooltips.css";
   </head>
 
   <body
-    class="flex items-center justify-center min-h-screen p-2 max-sm:bg-[url(/theme/images/background-image.webp)] bg-local bg-center bg-no-repeat bg-cover"
+    class="flex items-center justify-center min-h-screen phone:p-2 max-phone:bg-[url(/theme/images/background-image.webp)] bg-local bg-center bg-no-repeat bg-cover"
   >
     <div
       id="loading"
@@ -62,7 +62,7 @@ import "../styles/tooltips.css";
     </div>
 
     <video
-      class="hidden sm:block fixed w-screen h-screen top-0 left-0 right-0 bottom-0 -z-1 object-cover"
+      class="max-phone:hidden fixed w-screen h-screen top-0 left-0 right-0 bottom-0 -z-1 object-cover"
       autoplay
       muted
       loop
@@ -72,7 +72,7 @@ import "../styles/tooltips.css";
       <source src="theme/background.webm" type="video/webm" />
     </video>
 
-    <div class="flex flex-col relative gap-4 p-8">
+    <div class="flex flex-col relative gap-4 p-4 phone:p-8">
       <div class="gradient"></div>
       <header
         class="flex flex-col gap-4 place-items-center text-center shrink-0"
@@ -131,7 +131,7 @@ import "../styles/tooltips.css";
 
       <div>
         <nav
-          class="flex flex-row justify-items-center justify-between gap-1 bg-zinc-700/30 border border-zinc-700/10 p-1 rounded-2xl"
+          class="flex flex-row flex-wrap justify-items-center justify-evenly gap-1 bg-zinc-700/30 border border-zinc-700/10 p-1 rounded-2xl"
         >
           <a
             class="inline-flex items-center shrink-0 group hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out"
