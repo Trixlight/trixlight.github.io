@@ -62,15 +62,13 @@ body {
   }
 }
 
-@media (width <64rem) {
+@media (width < 32rem) or (height < 48rem) {
   * :not(#loading) {
     transition: none !important;
     animation: none !important;
     transform: none !important;
   }
-}
 
-@media (width < 32rem) or (height < 48rem) {
   :root {
     font-size: 14px;
   }
