@@ -9,7 +9,7 @@
   z-index: 10;
 }
 
-/* Positioning and visibility settings of the tooltip */
+/* Positioning and visibility */
 [data-tooltip]:before,
 [data-tooltip]:after {
   position: absolute;
@@ -22,7 +22,7 @@
   will-change: transform;
 }
 
-/* The actual tooltip with a dynamic width */
+/* Tooltip */
 [data-tooltip]:before {
   content: attr(data-tooltip);
   padding: 8px 16px;
@@ -51,14 +51,13 @@
   transform: translateX(-50%);
 }
 
-/* Tooltip becomes visible at hover */
+/* Tooltip on hover */
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
   visibility: visible;
   opacity: 1;
 }
 
-/* Scales from 0.5 to 1 -> grow effect */
 [data-tooltip]:hover:before {
   transform: translate(-50%, calc(0px - var(--arrow-size)));
 }
