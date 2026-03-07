@@ -4,14 +4,9 @@
 @custom-variant phone (@media (width >= 32rem));
 
 @theme {
+  --default-font-family: "Inter", sans-serif;
   --font-heading: "Chiron Hei HK", sans-serif;
-  --font-base: "Inter", sans-serif;
   --animate-wiggle: wiggle 1s ease-in-out infinite;
-}
-
-html,
-body {
-  font-family: "Inter", sans-serif;
 }
 
 .gradient {
