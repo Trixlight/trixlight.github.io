@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import loading from "../assets/loading.webp";
+---
+
+<div
+  id="loading"
+  class="fixed flex flex-col w-screen h-screen top-0 left-0 right-0 z-99 items-center justify-center bg-white opacity-100 transition duration-300 ease-in-out pointer-events-none"
+>
+  <Image
+    src={loading}
+    width="225"
+    height="185"
+    layout="constrained"
+    fit="contain"
+    alt=""
+    priority
+  />
+  <span
+    class="inline-flex font-sans items-center text-zinc-800 font-medium animate-wiggle"
+    >Загружаем страничку...</span
+  >
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+      document.getElementById("loading")!.style.opacity = "0";
+      document
+        .getElementsByTagName("html")[0]
+        .classList.remove("overflow-y-hidden");
+    }, 500);
+    setTimeout(() => {
+      document.getElementById("loading")!.classList.add("hidden");
+    }, 800);
+  });
+</script>
