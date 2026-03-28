@@ -5,7 +5,7 @@ import loading from "../assets/loading.webp";
 
 <div
   id="loading"
-  class="fixed flex flex-col w-screen h-screen top-0 left-0 right-0 z-99 items-center justify-center bg-white opacity-100 transition duration-300 ease-in-out pointer-events-none"
+  class="top-0 right-0 left-0 z-99 fixed flex flex-col justify-center items-center w-screen h-screen bg-white opacity-100 transition duration-300 ease-in-out pointer-events-none"
 >
   <Image
     src={loading}
@@ -17,7 +17,7 @@ import loading from "../assets/loading.webp";
     priority
   />
   <span
-    class="inline-flex font-sans items-center text-zinc-800 font-medium animate-wiggle"
+    class="inline-flex items-center font-sans font-medium text-zinc-800 animate-wiggle"
     >Загружаем страничку...</span
   >
 </div>

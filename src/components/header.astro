@@ -5,10 +5,10 @@ import russia from "../assets/russia-24.webp";
 ---
 
 <div
-  class="flex items-center justify-center min-h-screen phone:p-2 max-phone:bg-[url(/theme/images/background-image.webp)] bg-local bg-center bg-no-repeat bg-cover"
+  class="flex justify-center items-center min-h-screen phone:p-2 max-phone:bg-[url(/theme/images/background-image.webp)] bg-cover bg-no-repeat bg-center bg-local"
 >
   <video
-    class="max-phone:hidden absolute w-screen phone:min-h-175 h-screen top-0 left-0 right-0 bottom-0 -z-1 object-cover"
+    class="max-phone:hidden top-0 right-0 bottom-0 left-0 -z-1 absolute w-screen h-screen phone:min-h-175 object-cover"
     autoplay
     muted
     loop
@@ -18,12 +18,12 @@ import russia from "../assets/russia-24.webp";
     <source src="theme/background.webm" type="video/webm" />
   </video>
 
-  <div class="flex flex-col relative gap-4 p-4 z-1 phone:p-8">
+  <div class="z-1 relative flex flex-col gap-4 p-4 phone:p-8">
     <div class="gradient"></div>
-    <header class="flex flex-col gap-4 place-items-center">
+    <header class="flex flex-col place-items-center gap-4">
       <figure>
         <Image
-          class="size-55 rounded-full"
+          class="size-55 rounded-full select-none"
           src={avatar}
           width="256"
           height="256"
@@ -36,19 +36,19 @@ import russia from "../assets/russia-24.webp";
       </figure>
       <div>
         <h1
-          class="text-zinc-50 font-heading font-semibold text-4xl text-center"
+          class="font-heading font-semibold text-zinc-50 text-4xl text-center"
         >
           Trixlight
         </h1>
         <h2
-          class="text-zinc-200 font-heading font-semibold text-2xl text-center"
+          class="font-heading font-semibold text-zinc-200 text-2xl text-center"
         >
           Андрей Лу́нев
         </h2>
       </div>
       <div>
         <a
-          class="inline-flex items-center shrink-0 group font-medium text-zinc-200 hover:text-zinc-50 bg-zinc-700/30 hover:bg-zinc-800/30 border border-zinc-700/10 py-2 px-3 rounded-2xl transition duration-150 ease-in-out"
+          class="group inline-flex items-center px-3 py-2 bg-zinc-700/30 hover:bg-zinc-800/30 border border-zinc-700/10 rounded-2xl font-medium text-zinc-200 hover:text-zinc-50 transition duration-150 ease-in-out select-none shrink-0"
           href="https://yandex.com/maps/-/CPuWnEnz"
           data-tooltip="Открыть на Яндекс Карте"
           rel="nofollow"
@@ -69,11 +69,11 @@ import russia from "../assets/russia-24.webp";
     </header>
 
     <div>
-      <p class="text-zinc-200 font-light leading-tight text-center">
+      <p class="font-light text-zinc-200 text-center leading-tight">
         «They told me I could become somebody, <br />so I became a
         disappointment.»
       </p>
-      <p class="text-sm pt-2 text-center">
+      <p class="pt-2 text-sm text-center">
         <a
           class="text-zinc-200 hover:text-sky-300 transition duration-150 ease-in-out"
           href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg"
@@ -85,10 +85,10 @@ import russia from "../assets/russia-24.webp";
     </div>
 
     <nav
-      class="flex flex-wrap justify-evenly gap-1 bg-zinc-700/30 border border-zinc-700/10 p-1 rounded-2xl"
+      class="flex flex-wrap justify-evenly gap-1 p-1 bg-zinc-700/30 border border-zinc-700/10 rounded-2xl"
     >
       <a
-        class="inline-flex items-center shrink-0 group hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out"
+        class="group inline-flex items-center hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out select-none shrink-0"
         href="https://steamcommunity.com/id/trixlight"
         data-tooltip="Steam"
         target="_blank"
@@ -102,7 +102,7 @@ import russia from "../assets/russia-24.webp";
         />
       </a>
       <a
-        class="inline-flex items-center shrink-0 group hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out"
+        class="group inline-flex items-center hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out select-none shrink-0"
         href="https://itch.io/c/1593166"
         data-tooltip="Itch.io (NSFW)"
         target="_blank"
@@ -116,7 +116,7 @@ import russia from "../assets/russia-24.webp";
         />
       </a>
       <a
-        class="inline-flex items-center shrink-0 group hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out"
+        class="group inline-flex items-center hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out select-none shrink-0"
         href="https://www.youtube.com/trixlight"
         data-tooltip="YouTube"
         target="_blank"
@@ -130,7 +130,7 @@ import russia from "../assets/russia-24.webp";
         />
       </a>
       <a
-        class="inline-flex items-center shrink-0 group hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out"
+        class="group inline-flex items-center hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out select-none shrink-0"
         href="https://coub.com/trixlight"
         data-tooltip="Coub"
         target="_blank"
@@ -144,7 +144,7 @@ import russia from "../assets/russia-24.webp";
         />
       </a>
       <a
-        class="inline-flex items-center shrink-0 group hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out"
+        class="group inline-flex items-center hover:bg-zinc-800/30 border border-transparent hover:border-zinc-700/10 rounded-2xl transition duration-150 ease-in-out select-none shrink-0"
         href="https://shikimori.io/Trixlight"
         data-tooltip="Список аниме на Шикимори"
         data-tooltip-location="right"
@@ -160,7 +160,7 @@ import russia from "../assets/russia-24.webp";
       </a>
     </nav>
 
-    <footer class="text-zinc-400 text-xs font-medium text-center">
+    <footer class="font-medium text-zinc-400 text-xs text-center">
       <p>
         <a
           class="text-zinc-200 hover:text-sky-300 transition duration-150 ease-in-out"
